@@ -1,0 +1,26 @@
+<html>
+
+<title>REGISTRATION FORM</title>
+<body> <br>  
+	
+<?php $vinuta = $_POST['name'];?>
+<?php	echo "Welcome ". $vinuta"; ?>
+
+
+ <h2>Enter your details here</h2> 
+ <br> <br>
+<form  action="reg.php" method="post" >
+NAME:
+<input type="text" name="name" value="" required pattern="[A-Za-z]+" > <br> <br>
+EMAIL-ID:
+<input type="email" name="email" value=""><br> <br>
+QUALIFICATION:
+<input type="text" name="text" value="" required pattern="[A-Za-z]+.[A-Za-z]"><br> <br>
+PLACE:
+<input type="text" name="place" value="" required pattern="[A-Za-z]+"><br> <br>
+
+<input type="submit" name="submit" value="submit">
+</form>
+
+</body>
+</html>
